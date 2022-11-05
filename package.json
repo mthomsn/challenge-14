@@ -1,0 +1,27 @@
+{
+  "name": "challenge-14",
+  "version": "1.0.0",
+  "description": "CMS-style blog site similar to a Wordpress site, where developers can publish their blog posts and comment on other developers’ posts as well.",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mthomsn/challenge-14.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mthomsn/challenge-14/issues"
+  },
+  "homepage": "https://github.com/mthomsn/challenge-14#readme",
+  "dependencies": {
+    "express": "^4.18.2",
+    "express-handlebars": "^6.0.6",
+    "express-session": "^1.17.3",
+    "sequelize": "^6.25.3"
+  }
+}
