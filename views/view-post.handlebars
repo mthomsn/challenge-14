@@ -1,0 +1,47 @@
+<div class="card">
+  <div class="card-header flex-row justify-space-between">
+    <h2>{{title}}</h2>
+    <div>
+      {{username}}
+    </div>
+  </div>
+  <div class="card-body">
+    {{content}}
+  </div>
+</div>
+
+{{#if post.Comments}}
+    <section class="card">
+      <div class="card-header">
+        <h3>Comments</h3>
+      </div>
+
+      <div class="card-body">
+        {{#each post.Comments}}
+          <div class="card">
+            <div class="card-header">
+              {{username}}
+            </div>
+            <div class="card-body">
+              {{content}}
+            </div>
+          </div>
+        {{/each}}
+  {{/if}}
+
+  <form id="new-comment" class="card">
+    <div class="card-header">
+      <h3>New Comment</h3>
+    </div>
+
+    <div class="card-body">
+      <input type="hidden" name="post-id" value="{{id}}" />
+
+      <label class="form-label" for="comment-body">Comment</label>
+
+      <textarea name="comment-body" class="form-input"></textarea>
+
+      <button type="submit" class="btn">Submit</button>
+    </div>
+  </form>
+</div>
